@@ -1,9 +1,11 @@
 /**********FONTS**************/
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Grenze+Gotisch:wght@100..900&family=Mountains+of+Christmas:wght@400;700&family=Rubik+Wet+Paint&display=swap');
 /*******************
-font-family:"Roboto", sans-serif;
-font-family: "Dancing Script", cursive;
+font-family:"Rubik Wet Paint";
+font-family: "Eater";
+font-family: "Grenze Gotisch";
+font-family: "Mountains of Christmas";
+
 ****************************/
 
 * {
@@ -14,10 +16,12 @@ font-family: "Dancing Script", cursive;
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Mountains of Christmas";
+
     line-height: 1.6;
     margin: 0;
     min-height: 100vh;
+    background-image:linear-gradient(to right,purple,green)
 }
 
 ul{
@@ -36,7 +40,8 @@ a{
 
 .logo{
     margin:0;
-    font-size: 1.45em;
+    font-size: 3em;
+    font-family: "Grenze Gotisch";
 }
 
 .main-nav {
@@ -48,10 +53,11 @@ a{
     text-transform: uppercase;
     text-align:center;
     display:block;
+    color:black;
 }
 
 .main-nav a {
-    color: #34495e;
+    color: orange;
     font-size: .99em;
 }
 
@@ -63,7 +69,7 @@ a{
     padding-top:.5em;
     padding-bottom:.5em;
     border: 1px solid #a2a2a2;
-    background-color: #f4f4f4;
+    background-image:linear-gradient(to right,purple,green);
     -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     box-shadow:0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -72,18 +78,13 @@ a{
     border-radius: 5px;
 }
 
-
-
-/*===============================
-    Media Quereies
-===============================*/
 .container{
     display: grid;
 }
 
 .one {
     min-height:250px;
-    background-image: url(../images/balloons.jpg);
+    background-image:linear-gradient(to right,purple,green);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -100,7 +101,8 @@ a{
 }
 
 .two {
-    background-color: #f907;
+    background-color: rgba(246, 11, 11, 0);
+    
     min-height: 150px;
 }
 
@@ -190,6 +192,9 @@ a{
     background-color: #0096e6;
 }
 
+/*===============================
+    Media Quereies
+===============================*/
 /* Tablet Media Query*/
 @media (min-width: 769px) {
 
