@@ -92,27 +92,52 @@ a{
 }
 
 .one h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: "Grenze Gotisch", cursive;
     font-size: 3em;
     text-shadow: 4px 4px 5px #e0e2e3;
     text-align:center;
     margin-top: 1.5em;
-    background-color: #375872cc;
+    background-color: gray;
 }
 
 .two {
-    background-color: rgba(246, 11, 11, 0);
-    
+    background-color: rgba(3, 143, 82, 0.3);
     min-height: 150px;
+}
+
+.two p {
+    font-size:2.1em;
+    padding:1%;
+    color:black;
+}
+
+.two img{
+    height:300px;
+    width:400px;
+    padding-left:20%;
 }
 
 .three {
-    background-color: #f307;
-    min-height: 150px;
+    background-color:rgba(3, 143, 82, 0.3);
+    min-height: 150x;
+}
+
+.three p{
+    font-size:2em;
+    padding-right:30%;
+}
+
+.three img{
+    height:100%;
 }
 
 .four {
-    background-color: #f90
+    background-color: rgba(73, 29, 145, 0.743);
+}
+
+.four h2{
+    color:black;
+    font-size:2.5em;
 }
 
 .five {
@@ -130,6 +155,11 @@ a{
     min-height:150px;
 }
 
+img{
+    height:75%;
+    width:50%;
+}
+
 /* Add Card CSS Here */
 
 .cards {
@@ -142,18 +172,24 @@ a{
 
 .card {
     width:325px;
-    background-color: #283144;
-    color:#fff;
+    background-color:white;
+    color:black;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0,3);
     overflow: hidden; 
     margin:10px;
-    transition: 0.5s ease;
+    transition: 2s ease;
     margin-bottom: 5em;
 }
 
 .card:hover {
-    background-color: #1c2331;
+    background-color:red;
+    color:white;
+}
+
+.card-content{
+    color:black;
+    background-color:darkorchid;
 }
 
 .card img {
@@ -169,7 +205,7 @@ a{
 .card-content h2{
     font-size: 1.8em;
     margin-bottom: 1.5em;
-    color:#fff;
+    color:black;
 }
 
 .card-content p{
@@ -191,6 +227,85 @@ a{
 .card-button:hover {
     background-color: #0096e6;
 }
+
+.candyy{
+    color:white;
+}
+
+.candyy:hover{
+    animation-name:example;
+	animation-duration:20s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color: red;}
+    15% {color:orange;}
+    25%  {color: yellow;}
+    50%  {color: green;}
+    75% {color:blue}
+    90% {color: purple;}
+      100%{color:darkmagenta;}
+}
+
+/*CSS for newletter page */
+
+label{
+    font-size:2em;
+    margin-left:2%;
+    color:black;
+}
+
+#fName, #lName{
+    font-size:2em;
+    margin-left:2%;
+    animation-name:halloween;
+	animation-duration:20s;
+	animation-iteration-count: infinite;
+    font-family:"Rubik Wet Paint";
+}
+
+#email{
+    font-size:2em;
+    margin-left:2%;
+    animation-name:halloween;
+    animation-duration:20s;
+	animation-iteration-count: infinite;
+    font-family:"Grenze Gotisch";
+}
+
+#msg{
+    font-size: 2em;
+    color:black;
+}
+
+#subutton, #resutton{
+    margin:1%;
+    margin-left:2%;
+    border-radius:8px;
+    padding:1%;
+    font-size:2em;
+    animation-name:halloween;
+	animation-duration:20s;
+	animation-iteration-count: infinite;
+    font-family:"Rubik Wet Paint";
+}
+
+#ghost{
+    float:right;
+}
+
+@keyframes halloween {
+    0%   {color: black;}
+    15% {color:orange;}
+    25%  {color: red;}
+    50%  {color: green;}
+    75% {color:black}
+    90% {color: purple;}
+      100%{color:darkmagenta;}
+}
+
+
 
 /*===============================
     Media Quereies
@@ -218,7 +333,7 @@ a{
         grid-auto-rows: minmax(100px, auto);
     }
     .one {
-        grid-column: 1 / 3; /*LOOK FOR NUMBER OR PLAY AROUND TO FIX*/
+        grid-column: 1 / 3;
     }
 
     .two {
@@ -294,8 +409,8 @@ a{
 
 .pgFooter{
     margin-top: 0; 
-    padding: 10%;
+    padding: 5%;
     background-color: #375872;
     color:white;
-    height: 300px;
+    height: 100px;
 }
